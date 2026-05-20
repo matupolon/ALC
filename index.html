@@ -41,51 +41,35 @@
       <img class="hero-bg" src="assets/img/alc-hero.png" alt="Ilustrasi meja belajar aktuaria dengan catatan, grafik, dan laptop">
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="container hero-content">
-        <p class="eyebrow">Pusat Keilmiahan dan Keprofesian Aktuaria ITS</p>
-        <h1 id="hero-title">Belajar profesi aktuaria jadi lebih terarah.</h1>
+        <p class="eyebrow">HIMASAKTA ITS</p>
+        <h1 id="hero-title">Actuarial Learning Center</h1>
         <p class="hero-copy">
-          ALC membantu mahasiswa menemukan bank soal ASAI dan FSAI, materi akademik,
-          serta peluang karir dalam satu tempat yang ringan, rapi, dan mudah diperbarui.
+          Bank soal, materi akademik, info lomba, dan peluang magang aktuaria dalam satu tempat.
         </p>
         <div class="hero-actions" aria-label="Akses cepat">
           <a class="btn btn-primary" href="keilmiahan/asai.html">Mulai dari Bank Soal</a>
           <a class="btn btn-secondary" href="keprofesian/magang.html">Lihat Info Magang</a>
         </div>
-        <dl class="hero-stats" aria-label="Ringkasan konten ALC">
-          <div>
-            <dt>2</dt>
-            <dd>Jalur profesi</dd>
-          </div>
-          <div>
-            <dt>5</dt>
-            <dd>Kanal konten</dd>
-          </div>
-          <div>
-            <dt>100%</dt>
-            <dd>Statis dan ringan</dd>
-          </div>
-        </dl>
       </div>
     </section>
 
-    <section class="section-band vision-section">
-      <div class="container two-column">
-        <div>
-          <p class="eyebrow">Visi ALC</p>
-          <h2>Menjadi ruang belajar bersama yang terstruktur, kolaboratif, dan dekat dengan kebutuhan profesi aktuaria.</h2>
+    <section class="section-band recent-section" aria-labelledby="recent-title">
+      <div class="container recent-layout">
+        <div class="section-heading">
+          <p class="eyebrow">Recent Post</p>
+          <h2 id="recent-title">Update terbaru ALC</h2>
+          <p class="section-copy">Ringkasan konten yang baru ditambahkan atau perlu segera dilihat mahasiswa.</p>
         </div>
-        <p>
-          Website ini dirancang agar panitia dapat memperbarui soal, pembahasan,
-          materi, lomba, dan info magang tanpa menyentuh desain utama. Mahasiswa
-          dapat mencari konten dengan cepat, baik dari laptop maupun HP.
-        </p>
+
+        <!-- Recent post diisi dari data/recent.js agar panitia cukup update daftar data. -->
+        <div class="recent-list" data-recent-posts></div>
       </div>
     </section>
 
     <section class="container section" aria-labelledby="segment-title">
       <div class="section-heading">
-        <p class="eyebrow">Menu Utama</p>
-        <h2 id="segment-title">Pilih kebutuhan belajarmu</h2>
+        <p class="eyebrow">Akses Cepat</p>
+        <h2 id="segment-title">Masuk ke kanal utama</h2>
       </div>
 
       <div class="segment-grid">
@@ -132,35 +116,6 @@
         </article>
       </div>
     </section>
-
-    <section class="section-band light-band">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Konten Terbaru</p>
-          <h2>Mockup awal yang siap diganti panitia</h2>
-        </div>
-        <div class="card-grid compact-grid">
-          <article class="content-card">
-            <span class="tag">ASAI</span>
-            <h3>Probabilitas Dasar</h3>
-            <p>Paket latihan dan pembahasan singkat untuk persiapan ujian profesi awal.</p>
-            <a class="card-link" href="keilmiahan/asai.html">Buka daftar</a>
-          </article>
-          <article class="content-card">
-            <span class="tag tag-warm">Magang</span>
-            <h3>Actuarial Internship</h3>
-            <p>Contoh format info magang yang dapat diperbarui lewat file data.</p>
-            <a class="card-link" href="keprofesian/magang.html">Buka daftar</a>
-          </article>
-          <article class="content-card">
-            <span class="tag tag-blue">Akademik</span>
-            <h3>Machine Learning</h3>
-            <p>Kumpulan referensi untuk penguatan kemampuan komputasi dan analitik.</p>
-            <a class="card-link" href="keilmiahan/akademik.html">Buka daftar</a>
-          </article>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
@@ -170,6 +125,8 @@
     </div>
   </footer>
 
+  <script src="data/recent.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/recent-posts.js"></script>
 </body>
 </html>
