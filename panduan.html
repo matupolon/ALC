@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panduan update konten Actuarial Learning Center HIMASAKTA ITS.">
+  <title>Panduan Update Konten | ALC HIMASAKTA ITS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html" aria-label="Beranda ALC">
+        <span class="brand-mark" aria-hidden="true">ALC</span>
+        <span>
+          <strong>Actuarial Learning Center</strong>
+          <small>HIMASAKTA ITS</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" data-nav-menu>
+        <a href="index.html" data-nav-link>Beranda</a>
+        <a href="keilmiahan/asai.html" data-nav-link>Keilmiahan</a>
+        <a href="keprofesian/magang.html" data-nav-link>Keprofesian</a>
+        <a href="panduan.html" data-nav-link>Panduan</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container section" id="main-content">
+    <div class="page-heading">
+      <p class="eyebrow">Panduan Panitia</p>
+      <h1>Cara update konten ALC</h1>
+      <p>Gunakan halaman ini sebagai pegangan singkat saat menambah soal, materi, lomba, atau info magang.</p>
+    </div>
+
+    <article class="guide-body">
+      <h2>Menambah bank soal atau materi</h2>
+      <ol>
+        <li>Simpan PDF atau dokumen pada folder yang sesuai, misalnya <code>resources/asai/</code>.</li>
+        <li>Buka file data yang sesuai, misalnya <code>data/asai.js</code>.</li>
+        <li>Duplikasi salah satu objek di dalam array <code>items</code>.</li>
+        <li>Ubah <code>title</code>, <code>category</code>, <code>summary</code>, <code>tags</code>, <code>updated</code>, dan <code>url</code>.</li>
+        <li>Jika memakai Google Drive, ganti <code>url: "#"</code> dengan link yang aksesnya sudah dibuka.</li>
+      </ol>
+
+      <pre><code>{
+  title: "Paket Soal Baru",
+  category: "Probabilitas",
+  level: "Pemula",
+  period: "Tryout 2026",
+  summary: "Deskripsi singkat isi soal.",
+  tags: ["ASAI", "Probabilitas"],
+  updated: "20 Mei 2026",
+  url: "../resources/asai/nama-file.pdf",
+  ctaLabel: "Buka soal",
+}</code></pre>
+
+      <h2>Menambah info magang atau lomba</h2>
+      <ol>
+        <li>Buka <code>data/magang.js</code> atau <code>data/lomba.js</code>.</li>
+        <li>Tambahkan objek baru pada array <code>items</code>.</li>
+        <li>Isi <code>deadline</code> agar mahasiswa mudah memprioritaskan peluang.</li>
+        <li>Ganti <code>url</code> dengan link pendaftaran, poster, atau informasi resmi.</li>
+      </ol>
+
+      <h2>Menambah halaman baru</h2>
+      <ol>
+        <li>Salin <code>templates/content-template.html</code> ke folder tujuan.</li>
+        <li>Buat file data baru di <code>data/</code>.</li>
+        <li>Ganti script data pada halaman baru, misalnya dari <code>../data/asai.js</code> menjadi <code>../data/beasiswa.js</code>.</li>
+        <li>Tambahkan link halaman baru di navbar pada halaman yang relevan.</li>
+      </ol>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Actuarial Learning Center, HIMASAKTA ITS.</p>
+      <a href="index.html">Beranda</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

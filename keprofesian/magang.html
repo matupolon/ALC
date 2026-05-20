@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Info magang aktuaria, data, risk, dan finance dari Actuarial Learning Center HIMASAKTA ITS.">
+  <title>Info Magang | ALC HIMASAKTA ITS</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="../index.html" aria-label="Beranda ALC">
+        <span class="brand-mark" aria-hidden="true">ALC</span>
+        <span>
+          <strong>Actuarial Learning Center</strong>
+          <small>HIMASAKTA ITS</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" data-nav-menu>
+        <a href="../index.html" data-nav-link>Beranda</a>
+        <a href="../keilmiahan/asai.html" data-nav-link>Keilmiahan</a>
+        <a href="magang.html" data-nav-link>Keprofesian</a>
+        <a href="../panduan.html" data-nav-link>Panduan</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content-layout container" id="main-content">
+    <aside class="sidebar" aria-label="Navigasi keprofesian">
+      <p class="sidebar-title">Keprofesian</p>
+      <a href="lomba.html">Info Lomba</a>
+      <a href="magang.html" aria-current="page">Info Magang</a>
+    </aside>
+
+    <section class="content-main" aria-labelledby="content-title">
+      <div class="page-heading">
+        <p class="eyebrow" data-content-eyebrow>Keprofesian</p>
+        <h1 id="content-title" data-content-title>Info Magang</h1>
+        <p data-content-description>Daftar peluang magang yang relevan untuk mahasiswa aktuaria.</p>
+      </div>
+
+      <div class="content-toolbar" aria-label="Pencarian konten">
+        <label class="field">
+          <span>Cari</span>
+          <input type="search" placeholder="Cari posisi, perusahaan, atau tag..." data-search-input>
+        </label>
+        <label class="field">
+          <span>Kategori</span>
+          <select data-category-filter></select>
+        </label>
+      </div>
+
+      <div class="result-meta" data-result-meta aria-live="polite"></div>
+      <div class="card-grid content-results" data-content-grid></div>
+      <p class="empty-state" data-empty-state hidden>Belum ada konten yang cocok.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Actuarial Learning Center, HIMASAKTA ITS.</p>
+      <a href="../index.html">Beranda</a>
+    </div>
+  </footer>
+
+  <script src="../data/magang.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/content-page.js"></script>
+</body>
+</html>
