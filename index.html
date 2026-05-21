@@ -13,7 +13,7 @@
   <header class="site-header">
     <nav class="navbar container" aria-label="Navigasi utama">
       <a class="brand" href="index.html" aria-label="Beranda ALC">
-        <span class="brand-mark" aria-hidden="true">ALC</span>
+        <img class="brand-logo" src="assets/img/logo-himpunan.png" alt="Logo Himpunan">
         <span>
           <strong>Actuarial Learning Center</strong>
           <small>HIMASAKTA ITS</small>
@@ -29,8 +29,8 @@
       <!-- Tambah link menu baru di daftar ini jika ada halaman baru. -->
       <div class="nav-links" data-nav-menu>
         <a href="index.html" data-nav-link>Beranda</a>
-        <a href="keilmiahan/asai.html" data-nav-link>Keilmiahan</a>
-        <a href="keprofesian/magang.html" data-nav-link>Keprofesian</a>
+        <a href="keilmiahan/sumber-belajar.html" data-nav-link>Keilmiahan</a>
+        <a href="keprofesian/asai.html" data-nav-link>Keprofesian</a>
         <a href="panduan.html" data-nav-link>Panduan</a>
       </div>
     </nav>
@@ -38,31 +38,36 @@
 
   <main id="main-content">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-bg" src="assets/img/alc-hero.png" alt="Ilustrasi meja belajar aktuaria dengan catatan, grafik, dan laptop">
-      <div class="hero-overlay" aria-hidden="true"></div>
       <div class="container hero-content">
-        <p class="eyebrow">HIMASAKTA ITS</p>
-        <h1 id="hero-title">Actuarial Learning Center</h1>
-        <p class="hero-copy">
-          Bank soal, materi akademik, info lomba, dan peluang magang aktuaria dalam satu tempat.
-        </p>
-        <div class="hero-actions" aria-label="Akses cepat">
-          <a class="btn btn-primary" href="keilmiahan/asai.html">Mulai dari Bank Soal</a>
-          <a class="btn btn-secondary" href="keprofesian/magang.html">Lihat Info Magang</a>
-        </div>
-      </div>
-    </section>
+        <div class="hero-copy-panel">
+          <p class="hero-pill">HIMASAKTA ITS</p>
+          <h1 id="hero-title">Portal Belajar & Karir Aktuaria ITS</h1>
 
-    <section class="section-band recent-section" aria-labelledby="recent-title">
-      <div class="container recent-layout">
-        <div class="section-heading">
-          <p class="eyebrow">Recent Post</p>
-          <h2 id="recent-title">Update terbaru ALC</h2>
-          <p class="section-copy">Ringkasan konten yang baru ditambahkan atau perlu segera dilihat mahasiswa.</p>
+          <div class="hero-actions" aria-label="Akses cepat">
+            <a class="btn btn-primary" href="keilmiahan/sumber-belajar.html">Buka Sumber Belajar</a>
+            <a class="btn btn-secondary" href="keprofesian/asai.html">Lihat Bank Soal</a>
+          </div>
+          <div class="hero-benefits" aria-label="Keunggulan ALC">
+            <div>
+              <strong>Akademik & Kuliah</strong>
+              <span>Modul responsi, catatan kuliah, dan materi terpusat.</span>
+            </div>
+            <div>
+              <strong>Ujian Profesi PAI</strong>
+              <span>Bank soal ASAI & FSAI untuk persiapan ujian profesimu.</span>
+            </div>
+            <div>
+              <strong>Info Karir & Lomba</strong>
+              <span>Peluang internship dan kompetisi khusus aktuaria.</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Recent post diisi dari data/recent.js agar panitia cukup update daftar data. -->
-        <div class="recent-list" data-recent-posts></div>
+        <aside class="hero-preview" aria-label="Update terbaru ALC">
+          <p class="preview-kicker">Update Terbaru</p>
+          <h2 id="recent-title">Postingan terkini dari ALC</h2>
+          <div class="recent-list" data-recent-posts></div>
+        </aside>
       </div>
     </section>
 
@@ -76,20 +81,16 @@
         <article class="segment-panel is-science">
           <div class="panel-heading">
             <span class="panel-kicker">Keilmiahan</span>
-            <h3>Bank soal, pembahasan, dan materi akademik</h3>
+            <h3>Sumber belajar, lomba, dan pengembangan akademik</h3>
           </div>
           <div class="link-list">
-            <a href="keilmiahan/asai.html">
-              <span>Bank Soal ASAI</span>
-              <small>Probabilitas, statistika, ekonomi, dan modul profesi awal.</small>
+            <a href="keilmiahan/sumber-belajar.html">
+              <span>Sumber Belajar</span>
+              <small>Machine learning, BCC, statistik, aktuaria, dan komputasi.</small>
             </a>
-            <a href="keilmiahan/fsai.html">
-              <span>Bank Soal FSAI</span>
-              <small>Materi lanjutan dan referensi pendalaman profesi.</small>
-            </a>
-            <a href="keilmiahan/akademik.html">
-              <span>Materi Akademik</span>
-              <small>Statistika, machine learning, finansial, dan aktuaria.</small>
+            <a href="keilmiahan/lomba.html">
+              <span>Info Lomba</span>
+              <small>Business case, data challenge, paper, dan kompetisi kampus.</small>
             </a>
           </div>
         </article>
@@ -97,12 +98,16 @@
         <article class="segment-panel is-career">
           <div class="panel-heading">
             <span class="panel-kicker">Keprofesian</span>
-            <h3>Pengembangan karir, lomba, dan magang</h3>
+            <h3>Ujian profesi, bank soal, dan peluang karir</h3>
           </div>
           <div class="link-list">
-            <a href="keprofesian/lomba.html">
-              <span>Info Lomba</span>
-              <small>Business case, data challenge, paper, dan kompetisi kampus.</small>
+            <a href="keprofesian/asai.html">
+              <span>Bank Soal ASAI</span>
+              <small>Probabilitas, statistika, ekonomi, dan modul profesi awal.</small>
+            </a>
+            <a href="keprofesian/fsai.html">
+              <span>Bank Soal FSAI</span>
+              <small>Referensi lanjutan untuk pendalaman profesi aktuaria.</small>
             </a>
             <a href="keprofesian/magang.html">
               <span>Info Magang</span>
@@ -119,11 +124,40 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Actuarial Learning Center, HIMASAKTA ITS.</p>
-      <a href="#main-content">Kembali ke atas</a>
+    <div class="container footer-grid">
+      <div class="footer-about">r
+        <div class="footer-brand-row">
+          <span class="footer-mark" aria-hidden="true">A</span>
+          <div>
+            <strong>ALC HIMASAKTA</strong>
+            <small>Actuarial Learning Center</small>
+          </div>
+        </div>
+        <p>Pusat keilmiahan dan keprofesian untuk mahasiswa Aktuaria ITS.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Navigasi</h2>
+        <a href="index.html">Beranda</a>
+        <a href="keilmiahan/sumber-belajar.html">Keilmiahan</a>
+        <a href="keprofesian/asai.html">Keprofesian</a>
+        <a href="panduan.html">Panduan</a>
+      </div>
+      <div class="footer-col">
+        <h2>Kontak</h2>
+        <p>WhatsApp: <a href="https://wa.me/6281259580323" target="_blank" rel="noopener noreferrer">+62 812-5958-0323</a></p>
+        <p>Email: <a href="mailto:himasakta,ilptof26@gmail.com">himasakta,ilptof26@gmail.com</a></p>
+      </div>
+      <div class="footer-col footer-action">
+        <h2>Aksi Cepat</h2>
+        <p>Hubungi panitia untuk update konten, koreksi materi, atau pertanyaan ALC.</p>
+        <a class="footer-cta" href="https://wa.me/6281259580323" target="_blank" rel="noopener noreferrer">Hubungi ALC</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 ALC HIMASAKTA ITS. Seluruh hak cipta dilindungi.</p>
     </div>
   </footer>
+  <a class="whatsapp-float" href="https://wa.me/6281259580323" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
   <script src="data/recent.js"></script>
   <script src="assets/js/main.js"></script>
